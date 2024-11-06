@@ -23,7 +23,7 @@ export const Pricing = () => (
           </p>
         </div>
         <div className="grid pt-20 text-left grid-cols-1 lg:grid-cols-3 w-full gap-8">
-          <Card className="w-full rounded-md">
+          <Card className="w-full hover:shadow-2xl rounded-md">
             <CardHeader>
               <CardTitle>
                 <span className="flex flex-row gap-4 items-center font-normal">
@@ -79,7 +79,7 @@ export const Pricing = () => (
               </div>
             </CardContent>
           </Card>
-          <Card className="w-full shadow-2xl rounded-md">
+          <Card className="w-full hover:shadow-2xl rounded-md">
             <CardHeader>
               <CardTitle>
                 <span className="flex flex-row gap-4 items-center font-normal">
@@ -135,7 +135,7 @@ export const Pricing = () => (
               </div>
             </CardContent>
           </Card>
-          <Card className="w-full rounded-md">
+          <Card className="w-full hover:shadow-2xl rounded-md">
             <CardHeader>
               <CardTitle>
                 <span className="flex flex-row gap-4 items-center font-normal">
