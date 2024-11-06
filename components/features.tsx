@@ -1,7 +1,7 @@
 import { Badge } from "@/components/ui/badge";
 
 export const Features = () => (
-  <div className="w-full py-20 lg:py-40">
+  <div className="w-full py-20 lg:py-20">
     <div className="container mx-auto">
       <div className="flex flex-col gap-10">
         <div className="flex gap-4 flex-col items-start">

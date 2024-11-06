@@ -121,11 +121,11 @@ return (
         </NavigationMenu>
         </div>
         <div className="flex lg:justify-center">
-        <p className="font-semibold">TWBlocks</p>
+        <p className="font-semibold">Zimbosoft</p>
         </div>
         <div className="flex justify-end w-full gap-4">
-        <Button variant="ghost" className="hidden md:inline">
-            Book a demo
+        <Button variant="ghost" className="hidden md:inline font-medium">
+            Get A Quote
         </Button>
         <div className="border-r hidden md:inline"></div>
         <Button variant="outline">Sign in</Button>
