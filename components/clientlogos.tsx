@@ -7,10 +7,16 @@ CarouselApi,
 CarouselContent,
 CarouselItem,
 } from "@/components/ui/carousel";
-
+import Image from "next/image";
 export const ClientLogos = () => {
 const [api, setApi] = useState<CarouselApi>();
 const [current, setCurrent] = useState(0);
+const logos = [
+    {id:1, url: '/nextjs-logo.svg'}, 
+    {id:2, url: '/shadcn-logo.svg'}, 
+    {id:3, url: '/supabase-logo.svg'}, 
+    {id:4, url: '/tailwind-logo.svg'}
+]
 
 useEffect(() => {
     if (!api) {
@@ -39,13 +45,13 @@ return (
             <div className="bg-gradient-to-r from-background via-white/0 to-background z-10 absolute left-0 top-0 right-0 bottom-0 w-full h-full"></div>
             <Carousel setApi={setApi} className="w-full">
             <CarouselContent>
-                {Array.from({ length: 25 }).map((_, index) => (
+                {logos.map((logo) => (
                 <CarouselItem
                     className="basis-1/4 lg:basis-1/6"
-                    key={index}
+                    key={logo.id}
                 >
-                    <div className="flex rounded-md aspect-square bg-muted items-center justify-center p-2">
-                    <span className="text-sm">Logo {index + 1}</span>
+                    <div className="flex rounded-md aspect-square items-center justify-center p-2">
+                    <span className="text-sm"><Image src={logo.url} alt={'TailwindCSS logo'} width={120} height={32} /></span>
                     </div>
                 </CarouselItem>
                 ))}
